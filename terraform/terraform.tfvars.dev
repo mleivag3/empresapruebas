@@ -1,0 +1,5 @@
+region = "us-east-1"
+project = "pruebaemprsa"
+key_name = ""
+admin_cidr = "mleivag3" 
+db_password = "Secure$$58131!"
