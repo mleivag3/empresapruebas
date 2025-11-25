@@ -48,7 +48,7 @@ working-directory: terraform
 run: terraform plan -out=tfplan
 
 
-- name: Terraform Apply (only on push to master)
+- name: Terraform Apply 
 if: github.ref == 'refs/heads/master'
 working-directory: terraform
 run: terraform apply -auto-approve tfplan
