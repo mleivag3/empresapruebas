@@ -10,9 +10,5 @@ Componentes:
 - RDS MySQL (Multi-AZ, encrypted, backups)
 - S3 bucket para logs/archivos estáticos
 - IAM roles con least-privilege (mejoradas)
-- CloudWatch Dashboard (EC2 CPU, ALB latency, RDS connections)
+- CloudWatch Dashboard (EC2 CPU, ALB latency, RDS)
 
-IMPORTANTE:
-- Copia `terraform/terraform.tfvars.example` a `terraform/terraform.tfvars` y ajusta valores antes de aplicar.
-- Este despliegue crea recursos que pueden generar cargo en AWS (NAT Gateway, EC2, RDS).
- 
