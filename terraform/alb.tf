@@ -1,4 +1,4 @@
-# Security group for ALB
+# Security group 
 resource "aws_security_group" "alb_sg" {
   name = "${var.project}-alb-sg"
   vpc_id = aws_vpc.this.id

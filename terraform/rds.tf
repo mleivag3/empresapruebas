@@ -35,7 +35,7 @@ resource "aws_db_instance" "mysql" {
   password = var.db_password
   skip_final_snapshot = true
 
-  # Multi-AZ, encryption and backups
+  #bk M-az,encrip
   multi_az = true
   storage_encrypted = true
   backup_retention_period = 7
@@ -46,4 +46,3 @@ resource "aws_db_instance" "mysql" {
   tags = { Name = "${var.project}-rds" }
 }
 
-output "rds_endpoint" { value = aws_db_instance.mysql.endpoint }

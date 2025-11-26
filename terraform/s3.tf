@@ -6,5 +6,3 @@ resource "aws_s3_bucket" "static_logs" {
   force_destroy = true
   tags = { Name = "${var.project}-s3" }
 }
-
-output "s3_bucket" { value = aws_s3_bucket.static_logs.bucket }
